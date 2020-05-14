@@ -106,3 +106,11 @@ Under Rendering Color Space linear
 HDR mode must be on
 Good article about postporcessing
 ************************************************************************************** 
+If web gl problem happens
+0) (When the original project (Project A) fails...)
+1) Open an empty project (Project B)
+2) Make a WebGL build for Project B
+3) Close Unity
+4) Delete the "Library\il2cpp_cache" folder for Project A
+5) Open the original project (Project A)
+6) Try making the webgl build again (for Project A)
