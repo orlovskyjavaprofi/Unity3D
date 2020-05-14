@@ -114,3 +114,6 @@ If web gl problem happens
 4) Delete the "Library\il2cpp_cache" folder for Project A
 5) Open the original project (Project A)
 6) Try making the webgl build again (for Project A)
+7) if A does still build you need to copy your code your Unity3d cloud and then delete local project and download from cloud the your sources
+
+Quikc and easy  upload webgl version of your game
