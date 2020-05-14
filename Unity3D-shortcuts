@@ -1,0 +1,108 @@
+https://www.syncfusion.com/blogs/post/15-must-have-visual-studio-extensions-for-developers.aspx
+https://www.ubuntupit.com/best-visual-studio-code-extensions-for-programmers/
+
+update function: call methods before rendering of a frame
+Start function // When Object enters the scene, instatiation of objects
+Awake //References between scrips, initialization
+Debug.Log   // output the log 
+fixedUpdate //Called every physics step FiXedUpdate intervals are consistent used for regular updates!
+
+Vector3 movement in 3d !
+Destroy //Destroy game objects
+Input.GetKey(KeyCode.Space); // Get user input
+OnMouseDown()  //clickeds
+GetComponent  //Return reference of component
+Time.deltaTime //tim smooth
+Inheritance use : 
+KeyCode.NameofKeyboardButton
+Time.timeScale
+In Unity3D Editor Axes
+Enforce T-Pose
+
+//maya related
+
+http://www.lightcrafttech.com/support/doc/troubleshooting/loading-fbx-in-maya/
+
+[SerializeField] show values in Unity3D
+ 
+LateUpdate // use for camera
+ 
+Dont keep states in UI, dont put flow control in UI
+GameManager class for dealing for game states
+dont have large prefabs
+Not using interfaces
+ 
+During testing stay clearly  features of the game , so game can be retested.
+ 
+// Direction Formula!
+sphere.position -transform.position
+GameObject
+Animator
+Transform
+ 
+struct is immutable and stack stored, fewer then 4 fields
+class mutable storead at heap
+ 
+[System.Serializable] this will enable class field properties in Unity3d Inspector
+Delegate
+Events
+Actions same as delegate
+Lambda
+Contain, Distinct, method from Linq
+[ExpectedException(typeof(ArgumentNullException))]
+
+=====================C sharp tricks======================================
+isNullOrWhieSpace
+ToString().PadRight(Number) column console
+BigInteger
+File.ReadAllBytes
+Convert.ToBase64String()
+int.Parse()
+========================================================================
+Entity component System api isnt stable , cool feature but it still in development
+
+[Header]
+[Tooltip]
+[SerializeField]
+
+=======================Editor Keyshortcuts=========================================================
+alt+rightmouse click zoom
+alit + left mouse click look from different point of view
+w e rotate
+w r scale
+y scale move rotate
+==================================================================================================
+Mesh collider for moving parts.
+
+Input.getAxis["Horizontal"]  // Vertical
+Input.GetKey(KeyCode.M)
+
+GameObject.find("Object")
+GameObject.findWithTag("TAG)
+
+You need to do something like this: Unity3D Object References
+GameObject parentObject = Resources.Load("ParentPrefab");
+Then, you can use one of the following ways to get the child:
+Transform.Find GameObject childObject = parentObject.transform.Find("child name");
+Transform.GetChild GameObject childObject = parentObject.transform.GetChild(child index);
+
+https://livehelp.unity.com/client/how get stuck
+
+[Debug]
+DEbug.Log
+Debug.LogWarning
+Debug.LogError
+
+=====================(Major Unity default lifecycle methods)==========================
+awake 
+start
+update
+Fixedupdate
+====================================================================================
+Color picker bug in Windows fix works on Unity3D 2019 https://youtu.be/hIYz6Sw_zec
+**************************************************************************************
+Player Settings for Unity Version 2019 3. 13f1
+Under Rendering Color Space linear
+HDR mode must be on
+Good article about postporcessing
+************************************************************************************** 
