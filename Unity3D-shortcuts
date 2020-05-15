@@ -117,3 +117,4 @@ If web gl problem happens
 7) if A does still build you need to copy your code your Unity3d cloud and then delete local project and download from cloud the your sources
 
 Quikc and easy  upload webgl version of your game
+For Navmesh agent if you stuck check For anyone who comes across this problem, make sure you have enabled "Auto Sync Transforms" in the physics section of your project settings. Edit>Project Settings>Physics>Auto Sync Transforms. 
