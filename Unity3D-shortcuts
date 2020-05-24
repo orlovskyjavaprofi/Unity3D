@@ -93,6 +93,14 @@ DEbug.Log
 Debug.LogWarning
 Debug.LogError
 
+print( Vector3.zero ); // (0,0,0), Shorthand for: new Vector3( 0, 0, 0 )
+print( Vector3.one ); // (1,1,1), Shorthand for: new Vector3( 1, 1, 1 )
+print( Vector3.right ); // (1,0,0), Shorthand for: new Vector3( 1, 0, 0 )
+print( Vector3.up ); // (0,1,0), Shorthand for: new Vector3( 0, 1, 0 )
+print( Vector3.forward ); // (0,0,1), Shorthand for: new Vector3( 0, 0, 1 )
+Vector3.Cross( v3a, v3b );// Computes the cross product of the two Vector3s
+Vector3.Dot( v3a, v3b ); // Computes the dot product of the two Vector3s
+
 =====================(Major Unity default lifecycle methods)==========================
 awake 
 start
