@@ -101,6 +101,7 @@ print( Vector3.forward ); // (0,0,1), Shorthand for: new Vector3( 0, 0, 1 )
 Vector3.Cross( v3a, v3b );// Computes the cross product of the two Vector3s
 Vector3.Dot( v3a, v3b ); // Computes the dot product of the two Vector3s
 
+print( SystemInfo.operatingSystem ); // prints operating system , for example
 =====================(Major Unity default lifecycle methods)==========================
 awake 
 start
