@@ -31,6 +31,8 @@ http://www.lightcrafttech.com/support/doc/troubleshooting/loading-fbx-in-maya/
 [SerializeField] show values in Unity3D
  
 LateUpdate // use for camera
+Movement based on real time! 
+new Vector3(this.transform.position.x, this.transform.position.y, Time.realtimeSinceStartup - timeStartOffset);
  
 Dont keep states in UI, dont put flow control in UI
 GameManager class for dealing for game states
