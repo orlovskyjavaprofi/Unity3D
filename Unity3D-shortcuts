@@ -11,7 +11,7 @@ Start function // When Object enters the scene, instatiation of objects
 Awake //References between scrips, initialization
 Debug.Log   // output the log 
 fixedUpdate //Called every physics step FiXedUpdate intervals are consistent used for regular updates!
-
+Mathf use this class for cos , tan and other math calculations
 Vector3 movement in 3d !
 Destroy //Destroy game objects
 Input.GetKey(KeyCode.Space); // Get user input
