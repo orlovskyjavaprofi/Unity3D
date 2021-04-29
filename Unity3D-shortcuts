@@ -1,4 +1,5 @@
 https://docs.unity3d.com/2021.1/Documentation/Manual/ExecutionOrder.html Life cycle hooks in Unity3D understand how they works!
+https://docs.unity3d.com/2021.1/Documentation/Manual/EventFunctions.html understand how Update Events functions work in Unity3D
 =========================================================================================================================================================================
 Pathfinding Unity3D AI:
 using UnityEngine.AI; 
