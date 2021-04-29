@@ -6,6 +6,12 @@ If you want to use Unity library for pathfinding , make sure your include your i
 https://www.syncfusion.com/blogs/post/15-must-have-visual-studio-extensions-for-developers.aspx
 https://www.ubuntupit.com/best-visual-studio-code-extensions-for-programmers/
 setting up Unity3D for tests https://www.raywenderlich.com/9454-introduction-to-unity-unit-testing#c-rate
+ Take notice!!!!
+ 
+ The PlayMode tab is for tests that will run while in Play mode (as if you were playing the game in real time). 
+ The EditMode tests will run outside of Play mode, which is great for testing things like custom Inspector behaviors. 
+=========================================================================================================================================================================
+
 update function: call methods before rendering of a frame
 Start function // When Object enters the scene, instatiation of objects
 Awake //References between scrips, initialization
