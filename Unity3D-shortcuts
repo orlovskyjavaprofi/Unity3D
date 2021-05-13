@@ -12,6 +12,9 @@ setting up Unity3D for tests https://www.raywenderlich.com/9454-introduction-to-
  
  The PlayMode tab is for tests that will run while in Play mode (as if you were playing the game in real time). 
  The EditMode tests will run outside of Play mode, which is great for testing things like custom Inspector behaviors. 
+ 
+ Beware that to be able to test more complex stuff you need to put [ExecuteInEditMode] in your class which is under test, or else you would get strange warning like some 
+ class not initialized
 =========================================================================================================================================================================
 
 update function: call methods before rendering of a frame
@@ -31,6 +34,25 @@ KeyCode.NameofKeyboardButton
 Time.timeScale
 In Unity3D Editor Axes
 Enforce T-Pose
+
+TextMeshPro
+https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html
+https://stackoverflow.com/questions/61102508/tmpro-not-found-in-visual-studio-code
+https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
+https://youtu.be/olnxlo-Wri4
+
+Testing with Mono Behavior
+https://answers.unity.com/questions/653904/you-are-trying-to-create-a-monobehaviour-using-the-2.html
+Example :  mockGameObj.AddComponent<UnitMovementController> (); old
+AddComponent<ScriptNameHere>(); new better way
+https://answers.unity.com/questions/1198037/how-can-i-addcomponent-now.html
+
+Writing Unit test in Unity3D
+https://docs.nunit.org/articles/nunit/writing-tests/assertions/assertion-models/classic.html
+https://docs.nunit.org/articles/nunit/writing-tests/assertions/classic-assertions/Assert.NotNull.html
+https://docs.nunit.org/articles/nunit/writing-tests/assertions/classic-assertions/Assert.IsNotEmpty.html //for String
+https://docs.nunit.org/articles/nunit/writing-tests/attributes/setup.html
+https://dzone.com/articles/parameterized-test-example-in-the-net-core-using-n
 
 //maya related
 
@@ -79,6 +101,16 @@ Entity component System api isnt stable , cool feature but it still in developme
 [Header]
 [Tooltip]
 [SerializeField]
+
+player test examples
+using UnityEngine.TestTools;
+using System.Collections;
+
+    [UnityTest]
+    public IEnumerator checkIfInputUnitWasSetUp () {
+        Assert.NotNull (unitMovementObj.getCurrentUnit ());
+        yield return null;
+    }
 
 =======================Editor Keyshortcuts=========================================================
 alt+rightmouse click zoom
